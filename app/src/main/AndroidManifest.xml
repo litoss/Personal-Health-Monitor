@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.personalhealthmonitor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Controller.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Controller.AddReportActivity"
+            android:label="Add New Report"
+            android:parentActivityName=".Controller.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Controller.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Controller.GetDateActivity"
+            android:label="Get Date Picker"
+            android:parentActivityName=".Controller.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Controller.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Controller.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".Controller.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Controller.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Controller.ViewReportActivity"
+            android:label="Report"
+            android:parentActivityName=".Controller.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Controller.MainActivity" />
+        </activity>
+        <receiver
+            android:name=".Model.notifications.AlarmReceiver"
+            android:enabled="true"/>
+    </application>
+
+</manifest>

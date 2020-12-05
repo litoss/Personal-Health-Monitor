@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.anychart.AnyChartView
+            android:id="@+id/pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="10dp">
+
+        </com.anychart.AnyChartView>
+        <com.anychart.AnyChartView
+            android:id="@+id/body_temperature_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="10dp">
+
+        </com.anychart.AnyChartView>
+        <com.anychart.AnyChartView
+            android:id="@+id/blood_pressure_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="10dp">
+
+        </com.anychart.AnyChartView>
+        <com.anychart.AnyChartView
+            android:id="@+id/glycemic_index_chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="10dp">
+
+        </com.anychart.AnyChartView>
+
+    </LinearLayout>
+</ScrollView>

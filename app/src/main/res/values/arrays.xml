@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>Pie Chart</item>
+        <item>Body Temperature Chart</item>
+        <item>Blood Pressure Chart</item>
+        <item>Glycemic Index Chart</item>
+    </string-array>
+</resources>
